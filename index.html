@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <style>
+        .btn {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="success()">注销成功</button>
+    <button class="btn" onclick="error()">注销失败</button>
+    <button class="btn" onclick="sure()">确定</button>
+
+    <script>
+        function success() {
+            console.log('success');
+            window.jsInterface.notifyUnregisterResult(1)
+        }
+        function error() {
+            console.log('error');
+            window.jsInterface.notifyUnregisterResult(0)
+        }
+        function sure() {
+            console.log('sure');
+            window.jsInterface.closePage()
+        }
+    </script>
+</body>
+</html>
