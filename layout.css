@@ -1,0 +1,768 @@
+@media screen and (min-width: 600px) { /* PC端**/
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .mobile_sure {
+        display: none;
+    }
+    .ul_flag li.Rinfo_l1 span {
+        padding-left: 5px;
+        position: relative;
+        float: right;
+        top: -42px;
+        /* left: 30px; */
+    }
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    /***********/
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .logout-tips {
+        margin-left: 230px;
+        margin-top: 96px;
+    }
+    .tips-top {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .tips-logo {
+        width: 48px;
+        height: 54px;
+        margin-right: 24px;
+        background-image: url('../images/account/warn.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .tips-content {
+        margin-left: 72px;
+        margin-top: 32px;
+    }
+    .content-title, .confirm-title {
+        font-size: 24px;
+        color: #333;
+    }
+    .content-item {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .item-info {
+        display: block;
+        width: 910px;
+        line-height: 24px;
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 24px;
+    }
+    .product-tips {
+        line-height: 24px;
+        font-size: 16px;
+        color: #666;
+    }
+    .product-info {
+        margin-top: -8px;
+    }
+    .product-item-wrap {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -ms-flex-direction: row;
+    }
+    .product-item-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 8px;
+        margin-right: 60px;
+    }
+    .product-item-name {
+        font-size: 16px;
+        color: #666;
+        text-indent: 8px;
+    }
+    p.album-name {
+        font-size: 16px;
+        color: #666;
+        text-indent: 2px;  
+    }
+    .caiyun-icon {
+        background-image: url('../images/account/caiyun-logo.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .hebiji-icon {
+        background-image: url('../images/account/biji-logo.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .album-icon {
+        background-image: url('../images/account/album.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .go-on {
+        width: 264px;
+        height: 48px;
+        color: #fff;
+        font-size: 18px;    
+        background-color: #70aafc;
+        margin-top: 64px;
+        border-radius: 5px;
+    }
+    .go-on a {
+        display: block;
+        color: #fff;
+        font-size: 18px; 
+        text-decoration: none;
+    }
+    /***************check****/
+    .checking {
+        margin-top: 104px;
+        margin-left: 192px;
+    }
+    .checking-icon {
+        display: inline-block;
+        width: 74px;
+        height: 74px;
+        margin-right: 32px;
+        background-image: url('../images/account/checking.gif');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .checking-content {
+        display: inline-block;
+        position: relative;
+        top: 8px;
+    }
+    .checking-content-title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 32px;
+    }
+    .checking-content-info {
+        font-size: 18px;
+        color: #666;
+    }
+    .check-result {
+        margin-left: 190px;
+        margin-top: 104px;
+    }
+    .check-res-content-info-err {
+        font-size: 18px;
+        color: #666;
+        line-height: 27px;
+        width: 790px;
+    }
+
+
+
+    /*****************/
+    .logout-confirm {
+        display: none;
+        margin-left: 230px;
+        margin-top: 96px;
+    }
+    .confirm-top {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .confirm-logo {
+        width: 48px;
+        height: 54px;
+        margin-right: 24px;
+        background-image: url('../images/account/confirm.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .confirm-content {
+        margin-left: 72px;
+        margin-top: 32px;
+    }
+    .phone {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .phone span {
+        font-size: 18px;
+        color: #666;
+    }
+    .get-code {
+        width: 360px;
+        height: 48px;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .input-text {
+        width: 230px;
+        font-size: 18px;
+        text-indent: 10px;
+        color: #999;
+        border: 0;
+        border-radius: 5px;
+        margin-left: 5px;
+        -moz-appearance:textfield;
+        -webkit-appearance: none;
+    }
+    .input-text::-webkit-outer-spin-button,
+    .input-text::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        appearance: none; 
+        margin: 0; 
+    }
+    .show-err-tips {
+        margin-top: 6px;
+        font-size: 12px;
+        height: 20px;
+        color: #ff4a1f;
+    }
+    .get-code-btn {
+        font-size: 18px;
+        color: #70aafc;
+        height: 28px;
+        width: 130px;
+        margin-top: 10px;
+        border-left-width: 1px;
+        border-left-color: #ccc;
+        border-left-style: solid;
+    }
+    .confirmLogout{
+        margin-top: 48px;
+        width: 360px;
+        height: 48px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+    .confirmLogout a, .confirmLogout span {
+        /* display: block; */
+        color: #fff;
+        font-size: 18px; 
+        text-decoration: none;
+    }
+    .mask {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        background-color: rgba(196, 193, 193, 0.6);
+    }
+    .toast {
+        display: none;
+        position: fixed;
+        background-color: #fff;
+        width: 466px;
+        height: 233px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-233px,-116.5px);
+    }
+    .toast-title {
+        margin-top: 32px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        font-weight: 400;
+    }
+    .toast-close {
+        display: none;
+    }
+    .toast-content {
+        padding: 0 40px ;
+        line-height: 27px;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 32px;
+    }
+    .toast-btns-wrap {
+        position: absolute;
+        bottom: 32px;
+        left: 79px;
+    }
+    .toast-btn {
+        width: 138px;
+        height: 42px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .consider a {
+        display: block;
+        color: #fff;
+        font-size: 18px; 
+        text-decoration: none;
+    }
+    .besure a {
+        display: block;
+        color: #70aafc;
+        font-size: 18px; 
+        text-decoration: none;
+    }
+    .consider {
+        margin-right: 32px;
+        color: #fff;
+        background-color: #70aafc;
+    }
+    .besure {
+        color: #70aafc;
+        background-color: #fff;
+        border: 1px solid #70aafc;
+    }
+    /***************/
+    .logout-result {
+        display: none;
+        margin-left: 190px;
+        margin-top: 105px;
+    }
+    .logout-wrap-success, 
+    .logout-wrap-error,
+    .check-result-err {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: flex-start;
+        justify-items: flex-start;
+    }
+    .res-icon-success {
+        width: 80px;
+        height: 80px;
+        margin-right: 32px;
+        background-image: url('../images/account/logout_success.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .res-icon-err, .check-res-icon-err {
+        width: 80px;
+        height: 80px;
+        margin-right: 32px;
+        background-image: url('../images/account/logout_error.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .res-content, .check-res-content {
+        margin-top: 8px;
+    }
+    .res-content-title, .res-content-title-err, .check-res-content-title-err {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 32px;
+    }
+    .res-content-info, .res-content-info-err, .check-res-content-info-err {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 96px;
+    }
+    .res-sure-btn, .res-sure-btn-err {
+        width: 360px;
+        height: 48px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #70aafc;
+    }
+}
+@media screen and (max-width: 600px) { 
+    body {
+        -webkit-text-size-adjust: 100% !important;
+    }    
+    .cy_head {
+        display: none;
+    }
+    .mobile_phone {
+        display: none;
+    }
+    .pc_now {
+        display: none;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #f8f9fb;
+    }
+    /***********tips**************/
+    .logout-tips {
+        display: none;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .tips-top {
+        margin-top: 30px;
+    }
+    .content-title {
+        /* width: 57.6%; */
+        height: 4.8%;
+        font-family: PingFangSC-Semibold;
+        font-size: 24px;
+        color: #001026;
+        font-weight: bold;
+    }
+    .tips-content {
+        margin-top: 30px;
+    }
+    .content-item {
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: #001026;
+        margin-bottom: 10px;
+    }
+    .item-info {
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: rgba(0,16,38,0.5);
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .product-tips {
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: rgba(0,16,38,0.5);
+        margin-top: 30px;
+    }
+    .product-item-wrap {
+
+    }
+    .product-item {
+        display: inline-block;
+
+    }
+    .product-item-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .caiyun-icon {
+        margin-right: 20px;
+        background-image: url('../images/account/caiyun-logo.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .hebiji-icon {
+        margin-right: 20px;
+        background-image: url('../images/account/biji-logo.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .album-icon {
+        background-image: url('../images/account/album.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .product-item-name {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: rgba(0,16,38,0.5);
+        margin-top: 10px;
+        text-indent: 10px;
+    }
+    .go-on {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: rgba(0,96,230,1);
+        color: #fff;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .go-on a {
+        color: #fff;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .checking {
+        display: none;
+    }
+    .checking-icon {
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/account/loading.gif');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 30px;
+    }
+    .checking-content {
+
+    }
+    .checking-content-title {
+        display: none;
+    }
+    .checking-content-info {
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: rgba(0,16,38,0.5);
+        text-align: center;
+    }
+    .check-result {
+        display: none;
+    }
+    /********** confirm *****************/
+    .logout-confirm {
+        display: none;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .confirm-top {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .confirm-logo {
+
+    }
+    .confirm-title {
+        font-family: PingFangSC-Medium;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(0,16,38,1);
+    }
+    .confirm-content {
+
+    }
+    .phone, .phone span {
+        font-family: PingFangSC-Regular;
+        color:rgba(0,16,38,1);
+        font-size: 16px;
+    }
+    .get-code {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 12px;
+        border-radius: 5px;
+        background-color: #e4e2e2ab;
+    }
+    .input-text {
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        border: 0;
+        color: rgba(0,16,38,0.3);
+        background-color: #e4e2e200;
+        height: 50px;
+        -webkit-user-select:auto; /*webkit浏览器*/
+        -webkit-appearance: none;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        left: -2%;
+    }
+    input {
+        -webkit-appearance: none;
+    }
+    .input-text:focus {
+        outline: none;
+        -webkit-tap-highlight-color: #fff;
+    }
+    .get-code-btn {
+        font-family: PingFangSC-Regular;
+        color: rgba(0,96,230,1);
+        font-size: 16px;
+        line-height: 52px;
+    }
+    .show-err-tips {
+        margin-top: 10px;
+        color: #ff4a1f;
+        font-size: 12px;
+        width: 100%;
+        height: 16px;
+    }
+    .confirmLogout {
+        font-family: PingFangSC-Regular;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        margin-top: 60px;
+        background-color: #ccc;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .confirmLogout a, .confirmLogout span{
+        font-family: PingFangSC-Regular;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /**********toast*************/
+    .mask {
+        display: none;
+        background-color: rgba(177, 174, 174, 0.56);
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .toast {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        width: 82%;
+        height: 30%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .toast-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .toast-title {
+        font-family: PingFangSC-Regular;
+        color: rgba(37,38,43,1);
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        top: 12%;
+    }
+    .toast-close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+        right: 5px;
+        background-image: url('../images/account/close.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .toast-content {
+        font-family: PingFangSC-Regular;
+        color: rgba(94,95,100,1);
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+    }
+    .toast-btns-wrap {
+        border-top: 1px solid rgba(223,224,229,1);
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        position: relative;
+        top: 8px;
+    }
+    .toast-btn, .toast-btn a {
+        font-family: PingFangSC-Regular;
+        color: rgba(0,96,230,1);
+        font-size: 20px;
+        height: 100%;
+        width: 100%;
+    }   
+    .consider {
+        border-right: 1px solid rgba(223,224,229,1);
+        /* padding-right: 25px; */
+    }
+    .besure {
+        /* padding-left: 25px; */
+    }
+    /*******logout-result***********/
+    .logout-result, .check-result {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .logout-wrap-success, .logout-wrap-error, .check-result-err {
+
+    }
+    .res-icon-success {
+        width: 80px;
+        height: 80px;
+        background-image: url('../images/account/success_logout_mobile_icon.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .res-content, .check-res-content {
+        margin-top: 80px;
+    }
+    .res-content-title, .res-content-title-err, .check-res-content-title-err{
+        font-family: PingFangSC-Medium;
+        color: rgba(0,16,38,1);
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .res-content-info, .res-content-info-err, .check-res-content-info-err {
+        font-family: PingFangSC-Regular;
+        color: rgba(0,16,38,0.5);
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .sure, .res-sure-btn-err {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        bottom: 30px;
+        color: #ffffff;
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        height: 50px;
+        background-color: rgba(0,96,230,1);
+        border: 0;
+        border-radius: 5px;
+    }
+
+    /******************error*****/
+    .res-icon-err, .check-res-icon-err {
+        width: 80px;
+        height: 80px;
+        background-image: url('../images/account/logout_err_mobile_icon.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+}
