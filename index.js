@@ -14,7 +14,7 @@
         // 前端加密
         var publicKeyModulus = '<%=publicKeyModulus%>';
         var publicKeyExponent = '<%=publicKeyExponent%>';
-        
+
         // 注销结果 0-失败，1--成功，2--不满足条件
         var logoutRes = '';
     /******************浏览器回退和前进改变元素的可见性***************************/
@@ -74,13 +74,13 @@
             codeNum = 60 - diffTime;
             countdownHandler(codeNum);
         }
-        
+
     })
     window.onload = function() {
     };
 
-    
-    
+
+
     /**************************改变urlhash用于刷新保存状态******************/
         function changeUrlHash(value) {
             var path = location.href;
@@ -100,12 +100,12 @@
             if(source == '101') { // 和彩云
                 if(window.jsInterface) {
                     window.jsInterface.closePage();
-                }      
+                }
             } else if(source == '102') { // 和家相册
                 if(hxcJs && hxcJs.hxcInvoke) {
                     hxcJs.hxcInvoke('{"action":{"key":"jumpLoginAfterCancelAccount"}}','logoutConfirmCallback');
                 }
-            }     
+            }
         } else if(isIOS) { // IOS
             if(source == '101') { // 和彩云
                 if(window.jsInterface) {
@@ -115,7 +115,7 @@
                 if(hxcJs && hxcJs.hxcInvoke) {
                     hxcJs.hxcInvoke('{"action":{"key":"jumpLoginAfterCancelAccount"}}','logoutConfirmCallback');
                 }
-            }  
+            }
         } else if(isPC) { //web端
             if(logoutRes == 1) { //注销成功，强制退出
                 window.onheaderexec.exit();
@@ -134,7 +134,7 @@
             }
         }
     }
-    
+
     /******** ios 端注销后改变url
       * result=success 代表注销成功
       * result=success 代表注销失败
@@ -156,15 +156,15 @@
         }
         return res;
     }
-        
+
     /******input相关事件***********************/
         function inputFocus() {
                 $('.input-text').css({'outline':'none'});
                 $('.input-text').css({'color':'#333'});
                 // $('.input-text').val('')
                 if($('.input-text').val() == '') {
-                    $('.confirmLogout').css({ 
-                    'background-color': '#ccc' 
+                    $('.confirmLogout').css({
+                    'background-color': '#ccc'
                 });
                 } else {
                     $('.input-text').css({'color':'#333'});
@@ -173,16 +173,16 @@
         $('.input-text').on('blur',function() {
             if($('.input-text').val() == '') {
                 $('.input-text').css({'color':'#999'});
-                $('.confirmLogout').css({ 
-                    'background-color': '#ccc' 
+                $('.confirmLogout').css({
+                    'background-color': '#ccc'
                 });
             }
         })
-        $(".input-text").keyup(function(){    
-            $(this).val($(this).val().replace(/[^0-9.]/g,''));    
-        }).bind("paste",function(){  //CTR+V事件处理    
-            $(this).val($(this).val().replace(/[^0-9.]/g,''));     
-        }).css("ime-mode", "disabled"); //CSS设置输入法不可用  
+        $(".input-text").keyup(function(){
+            $(this).val($(this).val().replace(/[^0-9.]/g,''));
+        }).bind("paste",function(){  //CTR+V事件处理
+            $(this).val($(this).val().replace(/[^0-9.]/g,''));
+        }).css("ime-mode", "disabled"); //CSS设置输入法不可用
 
         $('.input-text').on('input', function() {
             var val = $('.input-text').val().replace(/[^0-9]/g,'');
@@ -191,13 +191,13 @@
                 $('.input-text').val(temp);
             }
             if(val == '') {
-                $('.confirmLogout').css({ 
-                    'background-color': '#ccc' 
+                $('.confirmLogout').css({
+                    'background-color': '#ccc'
                 });
                 // $('.confirmLogout').attr("disabled",true)
             } else { // 可点击清空输入框
-                $('.confirmLogout').css({ 
-                    'background-color': '#70aafc' 
+                $('.confirmLogout').css({
+                    'background-color': '#70aafc'
                 });
                 $('.confirmLogout').attr("disabled",false);
             }
@@ -243,7 +243,7 @@
             };
             getCode(objUser);
         })
-        var getCode = function(obj) { 
+        var getCode = function(obj) {
             $.ajax({
                 type: 'POST',
                 url: '../sso/destroyAccount!sendSms.action',
@@ -253,7 +253,7 @@
                 success: function(res) {
                     $('#besure_btn').attr("disabled",false);
                     $('#get_code_btn').attr("disabled",false);
-                    if(res.retCode == '0') { 
+                    if(res.retCode == '0') {
                         sessionStorage.setItem('beginTime',new Date().getTime());
                         countdownHandler(coedNumber);
                         // $('.show-err-tips').css('color','green');
@@ -261,7 +261,7 @@
                         $('#random').val(res.random);
                         // setTimeout(function() {$('.show-err-tips').html('');},2000);
                     } else if (res.retCode == '999') {
-                        
+
                     }else if (res.retCode == '1001') {
 
                     } else if (res.retCode == '1002') {
@@ -295,7 +295,7 @@
           * @param userID: 手机号aes加密
           * @param validateCodeEncryt: 手机验证码加密
           * respond
-          * *retCode 
+          * *retCode
           * *0：成功
             999: userID或validateCodeEncryt参数为空
             1001: userID或validateCodeEncryt加密错误
@@ -332,7 +332,7 @@
                         // l  OSE_203090517：用户存在包月产品的订购关系（BMP新增错误码）
                         // l  OSE_203090518：业务销户失败，短信验证码校验失败（BMP新增错误码）
                         //   OSE_203090519：业务销户失败，用户已自销户（BMP新增错误码）
-                        
+
                     }
                     else if (res.retCode == 'OSE_203090518' || res.retCode =='OSE_203090520') {
                         $('.mask').hide();
@@ -344,7 +344,7 @@
                             $('.show-err-tips').html('验证码错误或已失效，请重新获取');
                         } else {
                             $('.show-err-tips').html('验证码错误，请重新获取');
-                        }   
+                        }
                         $('#besure_btn').attr("disabled",false)
                         setTimeout(function() {$('.show-err-tips').html('');},2000);
                     }
@@ -353,12 +353,12 @@
                     // } else if (res.retCode == '1004') {
 
                     // } else if (res.retCode == '1005') {
-                        
-                    // } 
+
+                    // }
                     else if (errCode.indexOf(res.retCode) > -1) { //注销失败
                         if(history.replaceState) {
                             window.history.replaceState('','',changeUrlHash('logout-error'));
-                        }                       
+                        }
                         logoutRes = 0;
                         notifyLogoutRes(0);
                         $('.mask').hide();
@@ -427,7 +427,7 @@
                         hxcJs.hxcInvoke('{"action":{"key":"hiddenReturnButton"}}','besureClickCallback');
                     }
                 }
-            
+
             } else if(isIOS) {
                 if(source == '101') {  // 和彩云
                     if(window.jsInterface) {
@@ -436,7 +436,7 @@
                 } else if(source == '102') { // 和家相册
                     if(hxcJs && hxcJs.hxcInvoke) {
                         hxcJs.hxcInvoke('{"action":{"key":"hiddenReturnButton"}}','besureClickCallback');
-                    } 
+                    }
                 }
             } else { //pc web
                 return;
@@ -454,8 +454,8 @@
 
         }
     /**************** 注销结果跳转函数，两种可能（成功和失败）****END/
-      * 
-      * 
+      *
+      *
     /************** 交互时请求数据和隐藏其他元素 *******************/
     $('.toast-close').click(function() {
         $('.mask').hide();
@@ -463,10 +463,12 @@
     })
     $('#go-on-btn').click(function() { //清楚风险，确定继续
         $('.phone').html('手机号：' + account );
-        if(isAndroid || isIOS) {
-            // $('.input-text').css('background-color','#e4e2e200')
-            // $('.get-code').css('background-color','#e4e2e2ab')
-            $('.get-code-btn').css('text-indent','16px')
+        if(isAndroid) {
+            $('.input-text').css('text-indent',16 + 'px');
+            $('.get-code-btn').css({
+                'position': 'relative',
+                'left': -10 + 'px'
+            });
         }
         if(isPC) {
             $('.input-text ').attr('type','number')
@@ -498,7 +500,7 @@
     })
     $('#besure_btn').click(function() {
         $('#besure_btn').attr("disabled",true)
-        code = $('.input-text').val();        
+        code = $('.input-text').val();
         var key = new RSAUtils.getKeyPair(publicKeyExponent, "", publicKeyModulus);
         var accountEncrypt = RSAUtils.encryptedString(key,code.split("").reverse().join(""));
         var validateCode = Base64.encode(accountEncrypt); // 加密后的验证码
