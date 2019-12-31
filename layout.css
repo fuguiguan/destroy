@@ -177,7 +177,7 @@
         margin-top: 12px;
         border-radius: 5px;
         z-index: 10;
-        background-color: #e4e2e2ab;
+        background-color: #ccc;
     }
     .input-text {
         font-family: PingFangSC-Regular;
@@ -205,7 +205,7 @@
         color: rgba(0,96,230,1);
         font-size: 16px;
         line-height: 52px;
-        background-color:  #e4e2e2ab;
+        /* background-color:  #e4e2e2ab; */
     }
     .show-err-tips {
         margin-top: 10px;
