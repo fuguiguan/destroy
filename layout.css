@@ -205,6 +205,7 @@
         color: rgba(0,96,230,1);
         font-size: 16px;
         line-height: 52px;
+        background-color:  #e4e2e2ab;
     }
     .show-err-tips {
         margin-top: 10px;
