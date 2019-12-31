@@ -1,0 +1,393 @@
+@media screen and (min-width: 600px) { /* PC端**/
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  .mobile_sure {
+      display: none;
+  }
+  .ul_flag li.Rinfo_l1 span {
+      padding-left: 5px;
+      position: relative;
+      float: right;
+      top: -42px;
+      /* left: 30px; */
+  }
+  a {
+      display: block;
+      text-decoration: none;
+  }
+  /***********/
+  .container {
+      width: 100%;
+      height: 100%;
+  }
+  .logout-tips {
+      margin-left: 230px;
+      margin-top: 96px;
+  }
+  .tips-top {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .tips-logo {
+      width: 48px;
+      height: 54px;
+      margin-right: 24px;
+      background-image: url('../images/account/warn.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .tips-content {
+      margin-left: 72px;
+      margin-top: 32px;
+  }
+  .content-title, .confirm-title {
+      font-size: 24px;
+      color: #333;
+  }
+  .content-item {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  .item-info {
+      display: block;
+      width: 910px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 24px;
+  }
+  .product-tips {
+      line-height: 24px;
+      font-size: 16px;
+      color: #666;
+  }
+  .product-info {
+      margin-top: -8px;
+  }
+  .product-item-wrap {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+  }
+  .product-item-icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 8px;
+      margin-right: 60px;
+  }
+  .product-item-name {
+      font-size: 16px;
+      color: #666;
+      text-indent: 8px;
+  }
+  p.album-name {
+      font-size: 16px;
+      color: #666;
+      text-indent: 2px;  
+  }
+  .caiyun-icon {
+      background-image: url('../images/account/caiyun-logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .hebiji-icon {
+      background-image: url('../images/account/biji-logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .album-icon {
+      background-image: url('../images/account/album.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .go-on {
+      width: 264px;
+      height: 48px;
+      color: #fff;
+      font-size: 18px;    
+      background-color: #70aafc;
+      margin-top: 64px;
+      border-radius: 5px;
+  }
+  .go-on a {
+      display: block;
+      color: #fff;
+      font-size: 18px; 
+      text-decoration: none;
+  }
+  /***************check****/
+  .checking {
+      margin-top: 104px;
+      margin-left: 192px;
+  }
+  .checking-icon {
+      display: inline-block;
+      width: 74px;
+      height: 74px;
+      margin-right: 32px;
+      background-image: url('../images/account/checking.gif');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .checking-content {
+      display: inline-block;
+      position: relative;
+      top: 8px;
+  }
+  .checking-content-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 32px;
+  }
+  .checking-content-info {
+      font-size: 18px;
+      color: #666;
+  }
+  .check-result {
+      margin-left: 190px;
+      margin-top: 104px;
+  }
+  .check-res-content-info-err {
+      font-size: 18px;
+      color: #666;
+      line-height: 27px;
+      width: 790px;
+  }
+
+
+
+  /*****************/
+  .logout-confirm {
+      display: none;
+      margin-left: 230px;
+      margin-top: 96px;
+  }
+  .confirm-top {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .confirm-logo {
+      width: 48px;
+      height: 54px;
+      margin-right: 24px;
+      background-image: url('../images/account/confirm.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .confirm-content {
+      margin-left: 72px;
+      margin-top: 32px;
+  }
+  .phone {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  .phone span {
+      font-size: 18px;
+      color: #666;
+  }
+  .get-code {
+      width: 360px;
+      height: 48px;
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  .input-text {
+      width: 230px;
+      font-size: 18px;
+      text-indent: 10px;
+      color: #999;
+      border: 0;
+      border-radius: 5px;
+      margin-left: 5px;
+      -moz-appearance:textfield;
+      -webkit-appearance: none;
+  }
+  .input-text::-webkit-outer-spin-button,
+  .input-text::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      appearance: none; 
+      margin: 0; 
+  }
+  .show-err-tips {
+      margin-top: 6px;
+      font-size: 12px;
+      height: 20px;
+      color: #ff4a1f;
+  }
+  .get-code-btn {
+      font-size: 18px;
+      color: #70aafc;
+      height: 28px;
+      width: 130px;
+      margin-top: 10px;
+      border-left-width: 1px;
+      border-left-color: #ccc;
+      border-left-style: solid;
+  }
+  .confirmLogout{
+      margin-top: 48px;
+      width: 360px;
+      height: 48px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ccc;
+      border-radius: 5px;
+  }
+  .confirmLogout a, .confirmLogout span {
+      /* display: block; */
+      color: #fff;
+      font-size: 18px; 
+      text-decoration: none;
+  }
+  .mask {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+      background-color: rgba(196, 193, 193, 0.6);
+  }
+  .toast {
+      display: none;
+      position: fixed;
+      background-color: #fff;
+      width: 466px;
+      height: 233px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      transform: translate(-233px,-116.5px);
+  }
+  .toast-title {
+      margin-top: 32px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      font-weight: 400;
+  }
+  .toast-close {
+      display: none;
+  }
+  .toast-content {
+      padding: 0 40px ;
+      line-height: 27px;
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 32px;
+  }
+  .toast-btns-wrap {
+      position: absolute;
+      bottom: 32px;
+      left: 79px;
+  }
+  .toast-btn {
+      width: 138px;
+      height: 42px;
+      font-size: 18px;
+      border-radius: 5px;
+  }
+  .consider a {
+      display: block;
+      color: #fff;
+      font-size: 18px; 
+      text-decoration: none;
+  }
+  .besure a {
+      display: block;
+      color: #70aafc;
+      font-size: 18px; 
+      text-decoration: none;
+  }
+  .consider {
+      margin-right: 32px;
+      color: #fff;
+      background-color: #70aafc;
+  }
+  .besure {
+      color: #70aafc;
+      background-color: #fff;
+      border: 1px solid #70aafc;
+  }
+  /***************/
+  .logout-result {
+      display: none;
+      margin-left: 190px;
+      margin-top: 105px;
+  }
+  .logout-wrap-success, 
+  .logout-wrap-error,
+  .check-result-err {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      justify-content: flex-start;
+      justify-items: flex-start;
+  }
+  .res-icon-success {
+      width: 80px;
+      height: 80px;
+      margin-right: 32px;
+      background-image: url('../images/account/logout_success.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .res-icon-err, .check-res-icon-err {
+      width: 80px;
+      height: 80px;
+      margin-right: 32px;
+      background-image: url('../images/account/logout_error.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .res-content, .check-res-content {
+      margin-top: 8px;
+  }
+  .res-content-title, .res-content-title-err, .check-res-content-title-err {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 32px;
+  }
+  .res-content-info, .res-content-info-err, .check-res-content-info-err {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 96px;
+  }
+  .res-sure-btn, .res-sure-btn-err {
+      width: 360px;
+      height: 48px;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #70aafc;
+  }
+}
