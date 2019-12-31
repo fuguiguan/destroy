@@ -467,7 +467,7 @@
             $('.input-text').css('text-indent',16 + 'px');
             $('.get-code-btn').css({
                 'position': 'relative',
-                'left': -10 + 'px'
+                'left': -16 + 'px'
             });
         }
         if(isPC) {
