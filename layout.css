@@ -193,8 +193,11 @@
         position: relative;
         left: -2%;
     }
-    input {
+    input,input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
         -webkit-appearance: none;
+        -moz-appearance:textfield;
+        margin: 0;
+        border: 0;
     }
     .input-text:focus {
         outline: none;
