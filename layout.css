@@ -177,7 +177,7 @@
         margin-top: 12px;
         border-radius: 5px;
         z-index: 10;
-        background-color: #e4e2e2ab;
+        background-color: rgba(228, 226, 226, 0.67);
     }
     .input-text {
         font-family: PingFangSC-Regular;

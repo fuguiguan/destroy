@@ -463,10 +463,11 @@
     })
     $('#go-on-btn').click(function() { //清楚风险，确定继续
         $('.phone').html('手机号：' + account );
-        // if(isAndroid || isIOS) {
-        //     $('.input-text').css('background-color','#e4e2e200')
-        //     $('.get-code').css('background-color','#e4e2e2ab')
-        // }
+        if(isAndroid || isIOS) {
+            // $('.input-text').css('background-color','#e4e2e200')
+            // $('.get-code').css('background-color','#e4e2e2ab')
+            $('.get-code-btn').css('text-indent','16px')
+        }
         if(isPC) {
             $('.input-text ').attr('type','number')
         }
