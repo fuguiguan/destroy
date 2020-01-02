@@ -169,6 +169,7 @@
         font-family: PingFangSC-Regular;
         color:rgba(0,16,38,1);
         font-size: 16px;
+        -webkit-text-size-adjust: none !important;
     }
     .get-code {
         display: flex;
@@ -210,6 +211,8 @@
         font-size: 16px;
         line-height: 52px;
         background-color:  transparent;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
         /* position: relative;
         left: -10px; */
     }
