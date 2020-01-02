@@ -218,8 +218,6 @@
         -moz-appearance:textfield;
         margin: 0;
         border: 0;
-        /* position: relative;
-        left: -10px; */
     }
     .show-err-tips {
         margin-top: 10px;
