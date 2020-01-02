@@ -36,7 +36,7 @@
         //     $('.get-code ').css('background-color','#e4e2e2ab')
         // }
         if (true) {
-            // $('.phone').html('手机号：' + account)
+            $('.phone').html('手机号：' + account)
         }
         // if(isPC) {
         //     $('.input-text ').attr('type','number')
@@ -462,7 +462,7 @@
         $('.toast').hide();
     })
     $('#go-on-btn').click(function() { //清楚风险，确定继续
-        // $('.phone').html('手机号：' + account );
+        $('.phone').html('手机号：' + account );
         if(isAndroid) {
             $('.input-text').css('text-indent',16 + 'px');
             $('.get-code-btn').css({
