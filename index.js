@@ -1,6 +1,6 @@
     /***************************** url中的参数* **************************/
         var userID = '04O9NiVneizTiB6OvSAhBQ%3D%3D';
-        var clientType = '1'; // 0 -- pc , 1 -- ios, 2 -- android
+        var clientType = '2'; // 0 -- pc , 1 -- ios, 2 -- android
         var source = '101';  // 云盘101 ，相册102
         var token = 'hoTervWA%7C1%7CRCS%7C1579862901586%7Cafcx8t48pYhE.1ht4xlhdeosjJkBVqtM.hkmw9_ryHzwqWT7taKr1xb_uIOkVU5WFvkVgAaNYlQbAfs91CbmItsI91J0GUYpiLxc1QuoTFeFopeSnyid5eDSVZPG5cp0rakUj9n7RyQd_XKQu12YvrPYH4WV_ttc9A.gi26aagI-'; //云盘token
         var account = '19802021498'; //手机号
@@ -38,9 +38,9 @@
         if (true) {
             // $('.phone').html('手机号：' + account)
         }
-        // if(isPC) {
-        //     $('.input-text ').attr('type','number')
-        // }
+        if(isPC) {
+            $('.input-text ').attr('type','number')
+        }
         $('#get_code_btn').attr("disabled",false)
         var eleID = location.hash;
         if(eleID) {
