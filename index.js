@@ -470,7 +470,7 @@
                 'left': -16 + 'px'
             });
         }
-        if(isPC || isIOS) {
+        if(isPC) {
             $('.input-text ').attr('type','number')
         }
         $('.logout-tips').hide();
