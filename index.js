@@ -38,9 +38,9 @@
         if (true) {
             $('.phone').html('手机号：' + account)
         }
-        if(isPC) {
-            $('.input-text ').attr('type','number')
-        }
+        // if(isPC) {
+        //     $('.input-text ').attr('type','number')
+        // }
         $('#get_code_btn').attr("disabled",false)
         var eleID = location.hash;
         if(eleID) {
@@ -470,9 +470,9 @@
                 'left': -16 + 'px'
             });
         }
-        if(isPC) {
-            $('.input-text ').attr('type','number')
-        }
+        // if(isPC) {
+        //     $('.input-text ').attr('type','number')
+        // }
         $('.logout-tips').hide();
         $('.logout-confirm').show();
         if(history.replaceState) {
