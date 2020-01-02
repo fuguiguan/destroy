@@ -214,6 +214,10 @@
         background-color:  transparent;
         -webkit-tap-highlight-color: transparent;
         outline: none;
+        -webkit-appearance: none;
+        -moz-appearance:textfield;
+        margin: 0;
+        border: 0;
         /* position: relative;
         left: -10px; */
     }
