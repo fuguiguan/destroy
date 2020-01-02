@@ -38,7 +38,7 @@
         if (true) {
             $('.phone').html('手机号：' + account)
         }
-        if(isPC || isIOS) {
+        if(isPC) {
             $('.input-text ').attr('type','number')
         }
         $('#get_code_btn').attr("disabled",false)
@@ -470,7 +470,7 @@
                 'left': -16 + 'px'
             });
         }
-        if(isPC) {
+        if(isPC || isIOS) {
             $('.input-text ').attr('type','number')
         }
         $('.logout-tips').hide();
